@@ -1,0 +1,59 @@
+* Node Tests (exit code 0 -> test passed, exit code 1 -> test failed) *
+01 - Test NodeAlloc & NodeFree.
+02 - Allocating a node and checking all the parameters were correctly initialized, then freeing the node.
+03 - Allocating a double's node ,setting a double number within its data ,checking if the number is indeed saved and finally freeing the node.
+04 - Allocating a double's node ,setting a double number within its data ,checking if the number is indeed saved, Clearing the node and checking it was correctly cleared and finally freeing the node.
+05 - Allocating a node with illegal parameters.
+06 - Trying to input NULL to NodeFree, ClearNode, GetHashCount and SetNodeData
+07 - Allocating a double's node ,setting a double negative decimal number within its data ,checking if the number is indeed saved and finally freeing the node.
+08 - Allocating a character's node ,setting a character within its data ,checking if the character is indeed saved, Clearing the node and checking it was correctly cleared and finally freeing the node.
+09 - Allocating a node, changing its data to null then trying to clear the node and then to free it.
+10 - Allocating a double's node ,setting a double number within its data , Clearing the node and finally freeing the node.
+
+* double's hash set Tests (exit code 0 -> test passed, exit code 1 -> test failed) *
+11 - Allocating and freeing double's hash-set.
+12 - Creating double's hash set, some pairs, check sizes, check HashSetContainsValue free them.
+13 - Creating double's hash set, inserting few pairs, check sizes, free them.
+14 - Creating double's hash set, adding some doubles, check sizes, check HashSetAt then finally free them.
+15 - Create double's hash set, insert, delete, check sizes , delete, check sizes, free all.
+16 - Create double's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+17 - Create double's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+18 - Create double's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+19 - Creating double's hash set, inserting 20 pairs, check sizes, free them.
+20 - Create double's hash set, insert many elements, check HashSetClear.
+
+* integer's hash set Tests (exit code 0 -> test passed, exit code 1 -> test failed) *
+21 - Allocating and freeing integer's hash-set.
+22 - Creating integer's hash set, some pairs, check sizes, check HashSetContainsValue free them.
+23 - Creating integer's hash set, inserting few values, check sizes, free them.
+24 - Creating integer's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+25 - Create integer's hash set, insert, delete, check sizes , delete, check sizes, free all.
+26 - Create integer's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+27 - Create integer's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+28 - Create integer's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+29 - Creating integer's hash set, inserting 20 values, check sizes, free them.
+30 - Create integer's hash set, insert many elements, check HashSetClear.
+
+* character's hash set Tests (exit code 0 -> test passed, exit code 1 -> test failed) *
+31 - Allocating and freeing character's hash-set.
+32 - Creating character's hash set, inserting few values, check sizes, check HashSetContainsValue free them.
+33 - Creating character's hash set, inserting few values, check sizes, free them.
+34 - Creating character's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+35 - Create character's hash set, insert, delete, check sizes , delete, check sizes, free all.
+36 - Create character's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+37 - Create character's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+38 - Create character's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+39 - Creating character's hash set, inserting 20 values, check sizes, free them.
+40 - Create character's hash set, insert many elements, check HashSetClear.
+
+* Object's hash set Tests (exit code 0 -> test passed, exit code 1 -> test failed) *
+41 - Allocating and freeing an Object's hash-set.
+42 - Creating an Object's hash set, inserting few values, check sizes, check HashSetContainsValue free them.
+43 - Creating an Object's hash set, inserting few values, check sizes, free them.
+44 - Creating an Object's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+45 - Create an Object's hash set, insert, delete, check sizes , delete, check sizes, free all.
+46 - Create an Object's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+47 - Create an Object's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+48 - Create an Object's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+49 - Creating an Object's hash set, inserting 20 values, check sizes, free them.
+50 - Create an Object's hash set, insert many elements, check HashSetClear.

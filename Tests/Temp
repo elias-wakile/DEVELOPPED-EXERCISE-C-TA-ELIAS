@@ -1,0 +1,50 @@
+ex4_AutoTest_01_valgrind		0		Valgrind detected a problem during the execution of test: Test NodeAlloc & NodeFree.
+ex4_AutoTest_02_valgrind		0		Valgrind detected a problem during the execution of test: Allocating a node and checking all the parameters were correctly initialized, then freeing the node.
+ex4_AutoTest_03_valgrind		0		Valgrind detected a problem during the execution of test: Allocating a double's node ,setting a double number within its data ,checking if the number is indeed saved and finally freeing the node.
+ex4_AutoTest_04_valgrind		0		Valgrind detected a problem during the execution of test: Allocating a double's node ,setting a double number within its data ,checking if the number is indeed saved, Clearing the node and checking it was correctly cleared and finally freeing the node.
+ex4_AutoTest_05_valgrind		0		Valgrind detected a problem during the execution of test: Allocating a node with illegal parameters.
+ex4_AutoTest_06_valgrind		0		Valgrind detected a problem during the execution of test: Trying to input NULL to NodeFree, ClearNode, GetHashCount and SetNodeData
+ex4_AutoTest_07_valgrind		0		Valgrind detected a problem during the execution of test: Allocating a double's node ,setting a double negative decimal number within its data ,checking if the number is indeed saved and finally freeing the node.
+ex4_AutoTest_08_valgrind		0		Valgrind detected a problem during the execution of test: Allocating a character's node ,setting a character within its data ,checking if the character is indeed saved, Clearing the node and checking it was correctly cleared and finally freeing the node.
+ex4_AutoTest_09_valgrind		0		Valgrind detected a problem during the execution of test: Allocating a node, changing its data to null then trying to clear the node and then to free it.
+ex4_AutoTest_10_valgrind		0		Valgrind detected a problem during the execution of test: Allocating a double's node ,setting a double number within its data , Clearing the node and finally freeing the node.
+ex4_AutoTest_11_valgrind		0		Valgrind detected a problem during the execution of test: Allocating and freeing double's hash-set.
+ex4_AutoTest_12_valgrind		0		Valgrind detected a problem during the execution of test: Creating double's hash set, some pairs, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_13_valgrind		0		Valgrind detected a problem during the execution of test: Creating double's hash set, inserting few pairs, check sizes, free them.
+ex4_AutoTest_14_valgrind		0		Valgrind detected a problem during the execution of test: Creating double's hash set, adding some doubles, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_15_valgrind		0		Valgrind detected a problem during the execution of test: Create double's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_16_valgrind		0		Valgrind detected a problem during the execution of test: Create double's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_17_valgrind		0		Valgrind detected a problem during the execution of test: Create double's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_18_valgrind		0		Valgrind detected a problem during the execution of test: Create double's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_19_valgrind		0		Valgrind detected a problem during the execution of test: Creating double's hash set, inserting 20 pairs, check sizes, free them.
+ex4_AutoTest_20_valgrind		0		Valgrind detected a problem during the execution of test: Create double's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_21_valgrind		0		Valgrind detected a problem during the execution of test: Allocating and freeing integer's hash-set.
+ex4_AutoTest_22_valgrind		0		Valgrind detected a problem during the execution of test: Creating integer's hash set, some pairs, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_23_valgrind		0		Valgrind detected a problem during the execution of test: Creating integer's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_24_valgrind		0		Valgrind detected a problem during the execution of test: Creating integer's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_25_valgrind		0		Valgrind detected a problem during the execution of test: Create integer's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_26_valgrind		0		Valgrind detected a problem during the execution of test: Create integer's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_27_valgrind		0		Valgrind detected a problem during the execution of test: Create integer's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_28_valgrind		0		Valgrind detected a problem during the execution of test: Create integer's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_29_valgrind		0		Valgrind detected a problem during the execution of test: Creating integer's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_30_valgrind		0		Valgrind detected a problem during the execution of test: Create integer's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_31_valgrind		0		Valgrind detected a problem during the execution of test: Allocating and freeing character's hash-set.
+ex4_AutoTest_32_valgrind		0		Valgrind detected a problem during the execution of test: Creating character's hash set, inserting few values, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_33_valgrind		0		Valgrind detected a problem during the execution of test: Creating character's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_34_valgrind		0		Valgrind detected a problem during the execution of test: Creating character's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_35_valgrind		0		Valgrind detected a problem during the execution of test: Create character's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_36_valgrind		0		Valgrind detected a problem during the execution of test: Create character's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_37_valgrind		0		Valgrind detected a problem during the execution of test: Create character's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_38_valgrind		0		Valgrind detected a problem during the execution of test: Create character's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_39_valgrind		0		Valgrind detected a problem during the execution of test: Creating character's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_40_valgrind		0		Valgrind detected a problem during the execution of test: Create character's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_41_valgrind		0		Valgrind detected a problem during the execution of test: Allocating and freeing an Object's hash-set.
+ex4_AutoTest_42_valgrind		0		Valgrind detected a problem during the execution of test: Creating an Object's hash set, inserting few values, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_43_valgrind		0		Valgrind detected a problem during the execution of test: Creating an Object's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_44_valgrind		0		Valgrind detected a problem during the execution of test: Creating an Object's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_45_valgrind		0		Valgrind detected a problem during the execution of test: Create an Object's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_46_valgrind		0		Valgrind detected a problem during the execution of test: Create an Object's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_47_valgrind		0		Valgrind detected a problem during the execution of test: Create an Object's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_48_valgrind		0		Valgrind detected a problem during the execution of test: Create an Object's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_49_valgrind		0		Valgrind detected a problem during the execution of test: Creating an Object's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_50_valgrind		0		Valgrind detected a problem during the execution of test: Create an Object's hash set, insert many elements, check HashSetClear.

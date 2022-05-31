@@ -1,0 +1,469 @@
+##################
+# Cosmetic coding:
+##################
+
+
+class_naming_convention                                -0.2                Class name not following style conventions
+funcion_naming_convention                        -0.2                Function name not following style conventions
+var_naming_convention                                -0.2                Variable name not following style conventions
+function_uninformative_name                        -0.2                Function name should be meaningful and informative
+function_missing_documentation                        -2                Function missing heading documentation
+var_uninformative_name                                -0.2                Variable name should be meaningful and informative
+unicode                                                -0.2                unicode in files
+
+
+# use this only if the automatic script did not found it:
+curly_brackets_missing                        -0.3                You should surround "if","else","for","while" blocks with opening and closing curly brackets, even if the block is only #1 statement long.
+curly_brackets_place                        -0.4                In start of block the opening curly brackets should be in a new line, and not in the end of the previous line.
+long_line                                -1                Do not write over 100 columns per a line
+
+
+#############
+# General:
+#############
+# For miscellaneous cases that are not covered in the other errorcodes, use this:
+general_bad_style                        -2                General bad style remark
+# For extreme case of bad style, where the other errorcodes don't cover enough, use this:
+extremely_bad_style                        -4                Extremely bad style
+inefficient_code                        -2                code was written inefficiently
+general_error                                -10
+
+
+
+
+
+
+#######################################
+# Exercise specific - MANUAL GRADING:
+#######################################
+
+
+bad_use_of_magic_nums   -2  Constants should have meaningfull names which describes their purpose and not just a number
+bad_way_of_doc  -2  Documentation in c should be above the function and not below
+missing_null_assignment_after_free  -2  missing null assignment after free
+name_of_function_not_in_cs  -2  name of this function not stand the coding style rules
+missing_params_in_doc   -2  missing parameters in documentation
+redundant_constants_which_avoids_generality -2  your choose to use this constant limits the code generality
+missing_doc -3  function is missing documentation
+copy_elements_from_header   -10 copied redundant elements from the header
+inefficient_impl    -8  inefficient implementation
+wrong_magic_num -5  magic number which comes from self-invented assumptions
+not_deleting_garbage_code   -3  the code contains garbage code
+redundant_allocation    -3  redundant memory allocation
+allocation_too_much_memory  -5  allocating too much memory
+unclear_purpose_of_constants    -3  constants with unclear purpose.
+spending_to_much_memory_for_name    -8  using 1024 bytes for name instead of dynamic allocation of much less.
+function_too_long    -5  function is too long.
+impl_not_clean  -3  implementation is not clear.
+too_deep_condition  -2  you made the if statements too deep so it is not clear.
+no_spaces_between_function  -2  you dont make any space between function, the code looks like a mass.
+conditions_not_in_cs   -2  your conditions are not following coding style.
+spaces_are_missing  -2  your code is missing spaces.
+add_redundant_typedefs  -2  added redundant typedefs.
+too_long_if_statement   -3  too long if statement which makes things unclear.
+code_duplication    -3  code duplication.
+bad_cs_parenthesis  -3  you dont follow coding style
+
+magic_strings	-2	 You are using string literals inside your logical code. You should use constant variables or #define variables instead.
+magic_numbers	-2	 You are using magic numbers inside your logical code. You should use constant variables or #define variables instead.
+function_too_long_old	-2	 Function is too long. You should break it to sub-functions.
+size_t	-1	You should use size_t when the variable represents size
+inefficient_code_1	-2	You are calling strcmp twice on the same input
+Inefficient_code_2	-2	There's no need to send all the args if you are only using one of them
+strcmp_usage	-2	You are using the function strcmp wrong
+main_too_long                                                -5                You should break it to sub-routines.
+argument_not_const                                        -2                Function parameter should be defined as const, since the function has no intention of modifying its value.
+argument_not_const_main                                        -0                Main parameters should not be defined as const, since some UNIX APIs (getopt for example) actually do manipulate argv[] or argc
+code_repetition                                                -3                There is a code repetition. You should extract the common code to some shared function/code (or use one method in the other).
+implementation_not_optimal                                -5                The implementation is too complex (run time / memory /...), and it could have been done simply in a less complex manner
+missing_check_if_null                                        -1                Your code accesses pointers without verifying first that the value of the pointer is not null.
+vla_arrays                                                -15                Using of arrays with unknown size is forbidden (at least use malloc)
+read_array_instead_of_char                                -0.001                It's more efficient to read array of chars instead of char by char.
+inline_function	-1	You don't use inline when needed.
+using_namespace_std	-3	You should not use namespace std.
+missing_iterator_traits	-3	You don't use iterator traits in your iterator class.
+call_non_const_from_const	-2	The const function is calling to a non const function.
+non_const_iterator_func	-2	The iterator functions should be const
+const_func	-1	This function should be const
+excpt_in_constructor	-3	You don't free the memory when exception in the constructor occured
+incorrect_comparison	-3	Your comparison implementation is wrong
+return_const_reference	-2	Your method should return const reference
+rule_of_three	-3	You didn't use the rule of three
+
+
+implemented_algo_doesnt_stand_demanded_runtime                -12.5                The algorithm doensn't run in O(|N|*|L|*|A|).
+bad_naming_of_functions_or_variables                        -2                Poorly named function or variable.
+not_using_dynamic_mem_alloc                                -10                You should have used dynamic allocation here.
+not_using_strtod_strtol                                        -3                Not using demanded functions for conversion.
+too_complicated_implementation                                -5                Too complicated implementation.
+realloc_too_often                                        -2                Realloc too often - it should be done in blocks and not every time you add an item
+documented_code_without_purpose        -3                leaving “garbage” code in submission.
+using_forbidden_func                -3                used forbidden func in implementation
+
+realloc_to_self  -2      You should keep the result of realloc in a temporary pointer
+exit_code_as_bool   -1      You use EXIT_SUCCESS or EXIT_FAILURE as return value of function (that is not main)
+static_data_field -10       Data field of struct Node should be a pointer and not a static array
+check_malloc_success    -2      You don't check if allocation succeeded
+
+
+general_error_1                                -1                general error.
+general_error_2                                           -2              general error.
+general_error_3                                           -3              general error.
+general_error_4                                           -4              general error.
+general_error_5                                           -5              general error.
+general_error_6                                           -6              general error.
+general_error_7                                           -7              general error.
+
+
+general_bonus_1                                +1                general bonus
+general_bonus_2                                +2                general bonus
+
+
+
+#######################################
+# Administratives:
+#######################################
+
+
+late_submission                        -10                Submitted late
+copy_suspicion                        -100                Unfortunately, your code looks too similar to the code of other student(s) in the course. You are requested to contact us in order to clarify the issue.
+no_extension.pdf                -100                Missing approval for getting an extension
+bonus_tests_forum_1                +1                Good job with the tests you posted at the exercise forum at moodle
+bonus_tests_forum_2                +2                Good job with the tests you posted at the exercise forum at moodle
+bonus_tests_forum_3                +3                Good job with the tests you posted at the exercise forum at moodle
+incorrent_runtime_algorithm                                -5                Algorithm runs in incorrect runtime.
+incorrect_static_alloc_instead_of_dyn                        -3                Using not neccessary static allocation instead of dynamic allocation.
+
+
+
+
+
+
+bonus_tests_forum_5                +5                Nice job with the tests you posted at the exercise forum at moodle
+bonus_tests_forum_6                +6                Very Nice job with the tests you posted at the exercise forum at moodle
+bonus_tests_forum_7                +7                Good job with the tests you posted at the exercise forum at moodle
+bonus_tests_forum_8                +8                Very Good job with the tests you posted at the exercise forum at moodle
+bonus_tests_forum_9                +9                Excellent job with the tests you posted at the exercise forum at moodle
+bonus_tests_forum_10                +10                Perfect job with the tests you posted at the exercise forum at moodle
+
+
+#######################################
+#Unused:
+#######################################
+reinventing_the_wheel                                -3                You should use existing functions. instead of "re-inventing" them.
+illegal_params                                        -0.001                You should check the number of input parameters.
+fclose                                                -1                In C you have to close the files you open
+file_not_open                                        -1                You don't check that opening the file succeeded
+function_not_const                                -0.4                Function should be defined as const,since the function has no intention of modifying the object.
+no_zero_return                                        -0.1                main should return 0, unless an error occured
+
+
+###################################################
+################# Automatic Tests #################
+###################################################
+
+# Clause name for bodek system \t Penalty \t Program name - Penalty description
+
+ex4_AutoTest_01_1_1		-1		Test NodeAlloc & NodeFree.
+ex4_AutoTest_02_1_1		-1		Allocating a node and checking all the parameters were correctly initialized, then freeing the node.
+ex4_AutoTest_03_1_1		-1		Allocating a double's node ,setting a double number within its data ,checking if the number is indeed saved and finally freeing the node.
+ex4_AutoTest_04_1_1		-1		Allocating a double's node ,setting a double number within its data ,checking if the number is indeed saved, Clearing the node and checking it was correctly cleared and finally freeing the node.
+ex4_AutoTest_05_1_1		-1		Allocating a node with illegal parameters.
+ex4_AutoTest_06_1_1		-1		Trying to input NULL to NodeFree, ClearNode, GetHashCount and SetNodeData
+ex4_AutoTest_07_1_1		-1		Allocating a double's node ,setting a double negative decimal number within its data ,checking if the number is indeed saved and finally freeing the node.
+ex4_AutoTest_08_1_1		-1		Allocating a character's node ,setting a character within its data ,checking if the character is indeed saved, Clearing the node and checking it was correctly cleared and finally freeing the node.
+ex4_AutoTest_09_1_1		-1		Allocating a node, changing its data to null then trying to clear the node and then to free it.
+ex4_AutoTest_10_1_1		-1		Allocating a double's node ,setting a double number within its data , Clearing the node and finally freeing the node.
+ex4_AutoTest_11_1_1		-1		Allocating and freeing double's hash-set.
+ex4_AutoTest_12_1_1		-1		Creating double's hash set, some pairs, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_13_1_1		-1		Creating double's hash set, inserting few pairs, check sizes, free them.
+ex4_AutoTest_14_1_1		-1		Creating double's hash set, adding some doubles, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_15_1_1		-1		Create double's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_16_1_1		-1		Create double's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_17_1_1		-1		Create double's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_18_1_1		-1		Create double's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_19_1_1		-1		Creating double's hash set, inserting 20 pairs, check sizes, free them.
+ex4_AutoTest_20_1_1		-1		Create double's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_21_1_1		-1		Allocating and freeing integer's hash-set.
+ex4_AutoTest_22_1_1		-1		Creating integer's hash set, some pairs, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_23_1_1		-1		Creating integer's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_24_1_1		-1		Creating integer's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_25_1_1		-1		Create integer's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_26_1_1		-1		Create integer's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_27_1_1		-1		Create integer's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_28_1_1		-1		Create integer's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_29_1_1		-1		Creating integer's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_30_1_1		-1		Create integer's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_31_1_1		-1		Allocating and freeing character's hash-set.
+ex4_AutoTest_32_1_1		-1		Creating character's hash set, inserting few values, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_33_1_1		-1		Creating character's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_34_1_1		-1		Creating character's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_35_1_1		-1		Create character's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_36_1_1		-1		Create character's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_37_1_1		-1		Create character's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_38_1_1		-1		Create character's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_39_1_1		-1		Creating character's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_40_1_1		-1		Create character's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_41_1_1		-1		Allocating and freeing an Object's hash-set.
+ex4_AutoTest_42_1_1		-1		Creating an Object's hash set, inserting few values, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_43_1_1		-1		Creating an Object's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_44_1_1		-1		Creating an Object's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_45_1_1		-1		Create an Object's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_46_1_1		-1		Create an Object's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_47_1_1		-1		Create an Object's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_48_1_1		-1		Create an Object's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_49_1_1		-1		Creating an Object's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_50_1_1		-1		Create an Object's hash set, insert many elements, check HashSetClear.
+
+# Segmentation Fault codes:
+
+
+
+ex4_AutoTest_01_seg_fault	-1		Your program caused a segmentation fault during test: Test NodeAlloc & NodeFree.
+ex4_AutoTest_02_seg_fault	-1		Your program caused a segmentation fault during test: Allocating a node and checking all the parameters were correctly initialized, then freeing the node.
+ex4_AutoTest_03_seg_fault	-1		Your program caused a segmentation fault during test: Allocating a double's node ,setting a double number within its data ,checking if the number is indeed saved and finally freeing the node.
+ex4_AutoTest_04_seg_fault	-1		Your program caused a segmentation fault during test: Allocating a double's node ,setting a double number within its data ,checking if the number is indeed saved, Clearing the node and checking it was correctly cleared and finally freeing the node.
+ex4_AutoTest_05_seg_fault	-1		Your program caused a segmentation fault during test: Allocating a node with illegal parameters.
+ex4_AutoTest_06_seg_fault	-1		Your program caused a segmentation fault during test: Trying to input NULL to NodeFree, ClearNode, GetHashCount and SetNodeData
+ex4_AutoTest_07_seg_fault	-1		Your program caused a segmentation fault during test: Allocating a double's node ,setting a double negative decimal number within its data ,checking if the number is indeed saved and finally freeing the node.
+ex4_AutoTest_08_seg_fault	-1		Your program caused a segmentation fault during test: Allocating a character's node ,setting a character within its data ,checking if the character is indeed saved, Clearing the node and checking it was correctly cleared and finally freeing the node.
+ex4_AutoTest_09_seg_fault	-1		Your program caused a segmentation fault during test: Allocating a node, changing its data to null then trying to clear the node and then to free it.
+ex4_AutoTest_10_seg_fault	-1		Your program caused a segmentation fault during test: Allocating a double's node ,setting a double number within its data , Clearing the node and finally freeing the node.
+ex4_AutoTest_11_seg_fault	-1		Your program caused a segmentation fault during test: Allocating and freeing double's hash-set.
+ex4_AutoTest_12_seg_fault	-1		Your program caused a segmentation fault during test: Creating double's hash set, some pairs, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_13_seg_fault	-1		Your program caused a segmentation fault during test: Creating double's hash set, inserting few pairs, check sizes, free them.
+ex4_AutoTest_14_seg_fault	-1		Your program caused a segmentation fault during test: Creating double's hash set, adding some doubles, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_15_seg_fault	-1		Your program caused a segmentation fault during test: Create double's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_16_seg_fault	-1		Your program caused a segmentation fault during test: Create double's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_17_seg_fault	-1		Your program caused a segmentation fault during test: Create double's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_18_seg_fault	-1		Your program caused a segmentation fault during test: Create double's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_19_seg_fault	-1		Your program caused a segmentation fault during test: Creating double's hash set, inserting 20 pairs, check sizes, free them.
+ex4_AutoTest_20_seg_fault	-1		Your program caused a segmentation fault during test: Create double's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_21_seg_fault	-1		Your program caused a segmentation fault during test: Allocating and freeing integer's hash-set.
+ex4_AutoTest_22_seg_fault	-1		Your program caused a segmentation fault during test: Creating integer's hash set, some pairs, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_23_seg_fault	-1		Your program caused a segmentation fault during test: Creating integer's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_24_seg_fault	-1		Your program caused a segmentation fault during test: Creating integer's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_25_seg_fault	-1		Your program caused a segmentation fault during test: Create integer's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_26_seg_fault	-1		Your program caused a segmentation fault during test: Create integer's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_27_seg_fault	-1		Your program caused a segmentation fault during test: Create integer's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_28_seg_fault	-1		Your program caused a segmentation fault during test: Create integer's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_29_seg_fault	-1		Your program caused a segmentation fault during test: Creating integer's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_30_seg_fault	-1		Your program caused a segmentation fault during test: Create integer's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_31_seg_fault	-1		Your program caused a segmentation fault during test: Allocating and freeing character's hash-set.
+ex4_AutoTest_32_seg_fault	-1		Your program caused a segmentation fault during test: Creating character's hash set, inserting few values, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_33_seg_fault	-1		Your program caused a segmentation fault during test: Creating character's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_34_seg_fault	-1		Your program caused a segmentation fault during test: Creating character's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_35_seg_fault	-1		Your program caused a segmentation fault during test: Create character's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_36_seg_fault	-1		Your program caused a segmentation fault during test: Create character's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_37_seg_fault	-1		Your program caused a segmentation fault during test: Create character's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_38_seg_fault	-1		Your program caused a segmentation fault during test: Create character's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_39_seg_fault	-1		Your program caused a segmentation fault during test: Creating character's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_40_seg_fault	-1		Your program caused a segmentation fault during test: Create character's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_41_seg_fault	-1		Your program caused a segmentation fault during test: Allocating and freeing an Object's hash-set.
+ex4_AutoTest_42_seg_fault	-1		Your program caused a segmentation fault during test: Creating an Object's hash set, inserting few values, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_43_seg_fault	-1		Your program caused a segmentation fault during test: Creating an Object's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_44_seg_fault	-1		Your program caused a segmentation fault during test: Creating an Object's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_45_seg_fault	-1		Your program caused a segmentation fault during test: Create an Object's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_46_seg_fault	-1		Your program caused a segmentation fault during test: Create an Object's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_47_seg_fault	-1		Your program caused a segmentation fault during test: Create an Object's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_48_seg_fault	-1		Your program caused a segmentation fault during test: Create an Object's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_49_seg_fault	-1		Your program caused a segmentation fault during test: Creating an Object's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_50_seg_fault	-1		Your program caused a segmentation fault during test: Create an Object's hash set, insert many elements, check HashSetClear.
+
+segmentation_fault_penalty		-15		You had some segmentation faults in your program.
+segmentation_fault_penalty_15		-20		You had many segmentation faults in your program.
+
+# Timeout codes:
+
+ex4_AutoTest_01_timeout		-1		Your program timed out during test:Test NodeAlloc & NodeFree.
+ex4_AutoTest_02_timeout		-1		Your program timed out during test:Allocating a node and checking all the parameters were correctly initialized, then freeing the node.
+ex4_AutoTest_03_timeout		-1		Your program timed out during test:Allocating a double's node ,setting a double number within its data ,checking if the number is indeed saved and finally freeing the node.
+ex4_AutoTest_04_timeout		-1		Your program timed out during test:Allocating a double's node ,setting a double number within its data ,checking if the number is indeed saved, Clearing the node and checking it was correctly cleared and finally freeing the node.
+ex4_AutoTest_05_timeout		-1		Your program timed out during test:Allocating a node with illegal parameters.
+ex4_AutoTest_06_timeout		-1		Your program timed out during test:Trying to input NULL to NodeFree, ClearNode, GetHashCount and SetNodeData
+ex4_AutoTest_07_timeout		-1		Your program timed out during test:Allocating a double's node ,setting a double negative decimal number within its data ,checking if the number is indeed saved and finally freeing the node.
+ex4_AutoTest_08_timeout		-1		Your program timed out during test:Allocating a character's node ,setting a character within its data ,checking if the character is indeed saved, Clearing the node and checking it was correctly cleared and finally freeing the node.
+ex4_AutoTest_09_timeout		-1		Your program timed out during test:Allocating a node, changing its data to null then trying to clear the node and then to free it.
+ex4_AutoTest_10_timeout		-1		Your program timed out during test:Allocating a double's node ,setting a double number within its data , Clearing the node and finally freeing the node.
+ex4_AutoTest_11_timeout		-1		Your program timed out during test:Allocating and freeing double's hash-set.
+ex4_AutoTest_12_timeout		-1		Your program timed out during test:Creating double's hash set, some pairs, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_13_timeout		-1		Your program timed out during test:Creating double's hash set, inserting few pairs, check sizes, free them.
+ex4_AutoTest_14_timeout		-1		Your program timed out during test:Creating double's hash set, adding some doubles, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_15_timeout		-1		Your program timed out during test:Create double's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_16_timeout		-1		Your program timed out during test:Create double's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_17_timeout		-1		Your program timed out during test:Create double's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_18_timeout		-1		Your program timed out during test:Create double's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_19_timeout		-1		Your program timed out during test:Creating double's hash set, inserting 20 pairs, check sizes, free them.
+ex4_AutoTest_20_timeout		-1		Your program timed out during test:Create double's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_21_timeout		-1		Your program timed out during test:Allocating and freeing integer's hash-set.
+ex4_AutoTest_22_timeout		-1		Your program timed out during test:Creating integer's hash set, some pairs, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_23_timeout		-1		Your program timed out during test:Creating integer's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_24_timeout		-1		Your program timed out during test:Creating integer's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_25_timeout		-1		Your program timed out during test:Create integer's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_26_timeout		-1		Your program timed out during test:Create integer's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_27_timeout		-1		Your program timed out during test:Create integer's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_28_timeout		-1		Your program timed out during test:Create integer's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_29_timeout		-1		Your program timed out during test:Creating integer's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_30_timeout		-1		Your program timed out during test:Create integer's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_31_timeout		-1		Your program timed out during test:Allocating and freeing character's hash-set.
+ex4_AutoTest_32_timeout		-1		Your program timed out during test:Creating character's hash set, inserting few values, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_33_timeout		-1		Your program timed out during test:Creating character's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_34_timeout		-1		Your program timed out during test:Creating character's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_35_timeout		-1		Your program timed out during test:Create character's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_36_timeout		-1		Your program timed out during test:Create character's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_37_timeout		-1		Your program timed out during test:Create character's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_38_timeout		-1		Your program timed out during test:Create character's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_39_timeout		-1		Your program timed out during test:Creating character's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_40_timeout		-1		Your program timed out during test:Create character's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_41_timeout		-1		Your program timed out during test:Allocating and freeing an Object's hash-set.
+ex4_AutoTest_42_timeout		-1		Your program timed out during test:Creating an Object's hash set, inserting few values, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_43_timeout		-1		Your program timed out during test:Creating an Object's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_44_timeout		-1		Your program timed out during test:Creating an Object's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_45_timeout		-1		Your program timed out during test:Create an Object's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_46_timeout		-1		Your program timed out during test:Create an Object's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_47_timeout		-1		Your program timed out during test:Create an Object's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_48_timeout		-1		Your program timed out during test:Create an Object's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_49_timeout		-1		Your program timed out during test:Creating an Object's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_50_timeout		-1		Your program timed out during test:Create an Object's hash set, insert many elements, check HashSetClear.
+
+
+# Valid Valgrind Penalties
+
+ex4_AutoTest_01_valgrind	0	Valgrind detected a problem during the execution of test: Test NodeAlloc & NodeFree.
+ex4_AutoTest_02_valgrind	0	Valgrind detected a problem during the execution of test: Allocating a node and checking all the parameters were correctly initialized, then freeing the node.
+ex4_AutoTest_03_valgrind	0	Valgrind detected a problem during the execution of test: Allocating a double's node ,setting a double number within its data ,checking if the number is indeed saved and finally freeing the node.
+ex4_AutoTest_04_valgrind	0	Valgrind detected a problem during the execution of test: Allocating a double's node ,setting a double number within its data ,checking if the number is indeed saved, Clearing the node and checking it was correctly cleared and finally freeing the node.
+ex4_AutoTest_05_valgrind	0	Valgrind detected a problem during the execution of test: Allocating a node with illegal parameters.
+ex4_AutoTest_06_valgrind	0	Valgrind detected a problem during the execution of test: Trying to input NULL to NodeFree, ClearNode, GetHashCount and SetNodeData
+ex4_AutoTest_07_valgrind	0	Valgrind detected a problem during the execution of test: Allocating a double's node ,setting a double negative decimal number within its data ,checking if the number is indeed saved and finally freeing the node.
+ex4_AutoTest_08_valgrind	0	Valgrind detected a problem during the execution of test: Allocating a character's node ,setting a character within its data ,checking if the character is indeed saved, Clearing the node and checking it was correctly cleared and finally freeing the node.
+ex4_AutoTest_09_valgrind	0	Valgrind detected a problem during the execution of test: Allocating a node, changing its data to null then trying to clear the node and then to free it.
+ex4_AutoTest_10_valgrind	0	Valgrind detected a problem during the execution of test: Allocating a double's node ,setting a double number within its data , Clearing the node and finally freeing the node.
+ex4_AutoTest_11_valgrind	0	Valgrind detected a problem during the execution of test: Allocating and freeing double's hash-set.
+ex4_AutoTest_12_valgrind	0	Valgrind detected a problem during the execution of test: Creating double's hash set, some pairs, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_13_valgrind	0	Valgrind detected a problem during the execution of test: Creating double's hash set, inserting few pairs, check sizes, free them.
+ex4_AutoTest_14_valgrind	0	Valgrind detected a problem during the execution of test: Creating double's hash set, adding some doubles, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_15_valgrind	0	Valgrind detected a problem during the execution of test: Create double's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_16_valgrind	0	Valgrind detected a problem during the execution of test: Create double's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_17_valgrind	0	Valgrind detected a problem during the execution of test: Create double's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_18_valgrind	0	Valgrind detected a problem during the execution of test: Create double's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_19_valgrind	0	Valgrind detected a problem during the execution of test: Creating double's hash set, inserting 20 pairs, check sizes, free them.
+ex4_AutoTest_20_valgrind	0	Valgrind detected a problem during the execution of test: Create double's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_21_valgrind	0	Valgrind detected a problem during the execution of test: Allocating and freeing integer's hash-set.
+ex4_AutoTest_22_valgrind	0	Valgrind detected a problem during the execution of test: Creating integer's hash set, some pairs, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_23_valgrind	0	Valgrind detected a problem during the execution of test: Creating integer's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_24_valgrind	0	Valgrind detected a problem during the execution of test: Creating integer's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_25_valgrind	0	Valgrind detected a problem during the execution of test: Create integer's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_26_valgrind	0	Valgrind detected a problem during the execution of test: Create integer's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_27_valgrind	0	Valgrind detected a problem during the execution of test: Create integer's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_28_valgrind	0	Valgrind detected a problem during the execution of test: Create integer's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_29_valgrind	0	Valgrind detected a problem during the execution of test: Creating integer's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_30_valgrind	0	Valgrind detected a problem during the execution of test: Create integer's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_31_valgrind	0	Valgrind detected a problem during the execution of test: Allocating and freeing character's hash-set.
+ex4_AutoTest_32_valgrind	0	Valgrind detected a problem during the execution of test: Creating character's hash set, inserting few values, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_33_valgrind	0	Valgrind detected a problem during the execution of test: Creating character's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_34_valgrind	0	Valgrind detected a problem during the execution of test: Creating character's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_35_valgrind	0	Valgrind detected a problem during the execution of test: Create character's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_36_valgrind	0	Valgrind detected a problem during the execution of test: Create character's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_37_valgrind	0	Valgrind detected a problem during the execution of test: Create character's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_38_valgrind	0	Valgrind detected a problem during the execution of test: Create character's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_39_valgrind	0	Valgrind detected a problem during the execution of test: Creating character's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_40_valgrind	0	Valgrind detected a problem during the execution of test: Create character's hash set, insert many elements, check HashSetClear.
+ex4_AutoTest_41_valgrind	0	Valgrind detected a problem during the execution of test: Allocating and freeing an Object's hash-set.
+ex4_AutoTest_42_valgrind	0	Valgrind detected a problem during the execution of test: Creating an Object's hash set, inserting few values, check sizes, check HashSetContainsValue free them.
+ex4_AutoTest_43_valgrind	0	Valgrind detected a problem during the execution of test: Creating an Object's hash set, inserting few values, check sizes, free them.
+ex4_AutoTest_44_valgrind	0	Valgrind detected a problem during the execution of test: Creating an Object's hash set, adding some values, check sizes, check HashSetAt then finally free them.
+ex4_AutoTest_45_valgrind	0	Valgrind detected a problem during the execution of test: Create an Object's hash set, insert, delete, check sizes , delete, check sizes, free all.
+ex4_AutoTest_46_valgrind	0	Valgrind detected a problem during the execution of test: Create an Object's hash set, insert, delete, try to delete invalid values, try to add invalid values, check sizes, free all.
+ex4_AutoTest_47_valgrind	0	Valgrind detected a problem during the execution of test: Create an Object's hash set, insert, delete, check sizes, delete, check sizes , check HashSetAt, free all.
+ex4_AutoTest_48_valgrind	0	Valgrind detected a problem during the execution of test: Create an Object's hash set, insert, check HashSetGetLoadFactor, erase, check load factor, again and again.
+ex4_AutoTest_49_valgrind	0	Valgrind detected a problem during the execution of test: Creating an Object's hash set, inserting 20 values, check sizes, free them.
+ex4_AutoTest_50_valgrind	0	Valgrind detected a problem during the execution of test: Create an Object's hash set, insert many elements, check HashSetClear.
+
+
+ex4_valgrind_penalty_invalid_read/write_1		-0.5		Valgrind detected at least 1 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_2		-1		Valgrind detected at least 2 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_3		-1.5		Valgrind detected at least 3 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_4		-2		Valgrind detected at least 4 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_5		-2.5		Valgrind detected at least 5 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_6		-3		Valgrind detected at least 6 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_7		-3.5		Valgrind detected at least 7 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_8		-4		Valgrind detected at least 8 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_9		-4.5		Valgrind detected at least 9 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_10		-5		Valgrind detected at least 10 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_11		-5.5		Valgrind detected at least 11 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_12		-6		Valgrind detected at least 12 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_13		-6.5		Valgrind detected at least 13 invalid read/writes during testing
+ex4_valgrind_penalty_invalid_read/write_14		-7		Valgrind detected at least 14 invalid read/writes during testing
+
+
+ex4_valgrind_penalty_memory_leaks_1		-1		Valgrind detected at least 1 memory leak errors during testing
+ex4_valgrind_penalty_memory_leaks_2		-2		Valgrind detected at least 2 memory leak errors during testing
+ex4_valgrind_penalty_memory_leaks_3		-3		Valgrind detected at least 3 memory leak errors during testing
+ex4_valgrind_penalty_memory_leaks_4		-4		Valgrind detected at least 4 memory leak errors during testing
+ex4_valgrind_penalty_memory_leaks_5		-5		Valgrind detected at least 5 memory leak errors during testing
+ex4_valgrind_penalty_memory_leaks_6		-6		Valgrind detected at least 6 memory leak errors during testing
+ex4_valgrind_penalty_memory_leaks_7		-7		Valgrind detected at least 7 memory leak errors during testing
+ex4_valgrind_penalty_memory_leaks_8		-8		Valgrind detected at least 8 memory leak errors during testing
+ex4_valgrind_penalty_memory_leaks_9		-9		Valgrind detected at least 9 memory leak errors during testing
+ex4_valgrind_penalty_memory_leaks_10		-10		Valgrind detected at least 10 memory leak errors during testing
+
+ex4_valgrind_penalty_uninitialised_values_1		-0.2		Valgrind detected at least 1 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_2		-0.4		Valgrind detected at least 2 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_3		-0.6		Valgrind detected at least 3 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_4		-0.8		Valgrind detected at least 4 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_5		-1				Valgrind detected at least 5 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_6		-1.2		Valgrind detected at least 6 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_7		-1.4		Valgrind detected at least 7 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_8		-1.6		Valgrind detected at least 8 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_9		-1.8		Valgrind detected at least 9 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_10		-2				Valgrind detected at least 10 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_11		-2.2		Valgrind detected at least 11 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_12		-2.4		Valgrind detected at least 12 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_13		-2.6		Valgrind detected at least 13 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_14		-2.8		Valgrind detected at least 14 uninitialised values during testing
+ex4_valgrind_penalty_uninitialised_values_15		-3				Valgrind detected at least 15 uninitialised values during testing
+
+
+
+ex4_AutoTest_Valgrind_Penalty_1		-3		1 memory leak
+ex4_AutoTest_Valgrind_Penalty_2		-6		2 memory leaks
+ex4_AutoTest_Valgrind_Penalty_3		-9		3 memory leaks
+ex4_AutoTest_Valgrind_Penalty_4		-12		4 memory leaks
+ex4_AutoTest_Valgrind_Penalty_5		-15		5 or more memory leaks
+ex4_AutoTest_Valgrind_Penalty_6		-18		6 or more memory leaks
+ex4_AutoTest_Valgrind_Penalty_7		-21		7 or more memory leaks
+ex4_AutoTest_Valgrind_Penalty_8		-24		8 memory leaks
+ex4_AutoTest_Valgrind_Penalty_9		-27		9 memory leaks
+ex4_AutoTest_Valgrind_Penalty_10		-30		10 or more memory leaks
+ex4_AutoTest_Valgrind_Penalty_15		-50		15 or more memory leaks
+ex4_AutoTest_Valgrind_Penalty_20		-70		20 or more memory leaks
+
+
+# Other general autotest codes:
+
+COMPILATION_WARNING		-15		Your code compiled with warnings.
+COMPILATION_FAILED		-100	Your code did not compile.
+BAD_SUBMISSION			-100	Problem with submission archive.
+
+# Coding Style codes:
+
+CodingStyleError_readability-identifier-naming		-0		Your code did not follow the naming convention.
+CodingStyleError_readability-non-const-parameter		-0		You had a parameter that could have been pointer to const.
+CodingStyleError_readability-magic-numbers		-0		You may have had magic numbers in your code.
+CodingStyleError_readability-redundant-control-flow		-0		You have a redundant 'return' or 'continue' statement.
+CodingStyleError_readability-inconsistent-declaration-parameter-name		-0		You have a function with parameter names that are inconsistent between declaration and definition.
+CodingStyleError_readability-avoid-const-params-in-decls		-0		You have const qualified parameters in function declaration, but this has no effect.
+
+
+CodingStylePenalty_0		0		You have 0 codingStyle errors. No points reduced.
+CodingStylePenalty_1		-1		You have 1 codingStyle error.
+CodingStylePenalty_2		-3		You have 2 codingStyle errors.
+CodingStylePenalty_3		-3		You have 3 codingStyle errors.
+CodingStylePenalty_4		-4		You have 4 codingStyle errors.
+CodingStylePenalty_5		-5		You have 5 codingStyle errors.
+CodingStylePenalty_6		-6		You have 6 codingStyle errors.
+CodingStylePenalty_7		-7		You have 7 codingStyle errors.
+CodingStylePenalty_8		-8		You have 8 codingStyle errors.
+CodingStylePenalty_9		-9		You have 9 codingStyle errors.
+CodingStylePenalty_10		-10		You have 10 codingStyle errors.
